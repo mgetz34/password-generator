@@ -1,0 +1,16 @@
+PASSWORD GENERATOR
+
+1. I want a password generated randomly
+2. I navigate to the application and see a box where the generated password will go 
+and a button to generate the password (already constructed)
+2. Then, I am presented with a series of prompts to answer that will be variables:
+
+    A. Length of password? can only be 8-128 characters
+    B. Include lowercase characters? yes or no
+    C. Include uppercase characters? yes or no
+    D. Include numbers? yes or no
+    D. Include special characters? yes or no 
+
+3. Once all the prompts have been answered w/ at least one variable selected (i.e. length and lowercase)
+4. Then a password will be generated matching the above specified criteria 
+5. The generated password will be displayed in an alert or written to the page 
