@@ -23,4 +23,4 @@ Refer to the license in the repo
 
 ## Application Link
 
-[Password Generator Michael Getz]()
+[Password Generator Michael Getz](https://mgetz34.github.io/password-generator/)
