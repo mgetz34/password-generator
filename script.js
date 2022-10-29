@@ -1,4 +1,3 @@
-
 // new password variables 
 
 var lowercase = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k",
@@ -78,7 +77,7 @@ function generatePassword() {
   var finalPassword = []
 
   for (var i = 0; i < passwordLength; i++) {
-    var randomIndex = Math.floor(Math.random() * newPassArray.Length)
+    var randomIndex = Math.floor(Math.random() * newPassArray.length)
     finalPassword = finalPassword.concat(newPassArray[randomIndex])
     // console.log(finalPassword);
   }
