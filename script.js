@@ -12,18 +12,13 @@ var numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
 var specialCharacters = ["~", "!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "-", "_", "=",
   "+", "[", "]", "{", "}", ";", ":", "<", ">", "?", "/", "?", "|", "/", ".", ","];
 
+var newPassArray = [];
 
 // Assignment Code
 
 var generateBtn = document.querySelector("#generate");
 
 function generatePassword() {
-
-  //if statement to check the conditionals, error message if it's n ot a valid response. IF not valid, restarts function (call function again)
-
-  // else if statement: check more conditionals
-
-  var newPassArray = [];
 
   // GIVEN I need a new, secure password
   // WHEN I click the button to generate a password
@@ -34,14 +29,15 @@ function generatePassword() {
 
   var passwordLength = prompt("New Password Length? Must be between 8-128 characters")
 
-
   // THEN I choose a length of at least 8 characters and no more than 128 characters
 
   if (passwordLength < 8 || passwordLength > 128) {
     alert("New password must be 8-128 characters");
     return null;
   }
-
+  //if statement to check the conditionals, error message if it's n ot a valid response. 
+  // If not valid, restarts function (call function again)
+  // else if statement: check more conditionals
 
   // WHEN asked for character types to include in the password
   // THEN I confirm whether or not to include lowercase, uppercase, numeric, and / or special characters
@@ -59,7 +55,8 @@ function generatePassword() {
     return null;
   }
 
-  //as the below "ifs" become true, the contents of their respected arrays will be added to the newPassArray above
+  //as the below "ifs" become true, the contents of their respected 
+  // arrays will be added to the newPassArray above
 
   if (lowercaseConfirm) {
     newPassArray = newPassArray.concat(lowercase);
@@ -84,19 +81,17 @@ function generatePassword() {
     // console.log(finalPassword);
   }
 
-
   // finalPassword = finalPassword.toString()
   // console.log(finalPassword);
 
   finalPassword = finalPassword.join('');
-  console.log(finalPassword);
+  // console.log(finalPassword);
   //The final array will consist of the requested UC, LC, #, and SCs the user requested
 
   //Then the final array will be randomized and set to a length specified by the user on the first prompt
 
   return (finalPassword);
 }
-
 
 // Write password to the #password input
 function writePassword() {
@@ -109,7 +104,6 @@ function writePassword() {
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
-
 
 // WHEN all prompts are answered
 // THEN a password is generated that matches the selected criteria
