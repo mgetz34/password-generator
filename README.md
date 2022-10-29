@@ -17,12 +17,10 @@ Navigate to application URL and follow the prompts after pressing the "generate-
 
 ![](assets/images/Screenshot%202022-10-29%20085845.png)
 
-
 ## License
 
 Refer to the license in the repo
 
+## Application Link
 
-## Application Link 
-
-[Password Generator Michael Getz]()
+[Password Generator Michael Getz](https://mgetz34.github.io/password-generator/)
